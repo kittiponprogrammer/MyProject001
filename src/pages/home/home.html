@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+    <ion-item>
+      <ion-label floating>name</ion-label>
+      <ion-input type="text" [(ngModel)]="namePerson"></ion-input>
+    </ion-item>
+    <button ion-button block round color="danger" (click)="showAlert(namePerson)">Default</button>
+    <ion-icon name="heart" ></ion-icon>
+    <ion-icon ios="logo-apple" md="logo-android"></ion-icon>
+</ion-content>
